@@ -1,17 +1,50 @@
-body {
+/* body {
   width: 100%;
-}
+} */
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50% 50%;
-  row-gap: 2px;
-  column-gap: 2px;
-  text-align: center;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "one one one"
+    "two three three"
+    "four five six";
 }
 
-.block-container {
+/* .block-container {
   border: 2px solid green;
-  width: 100%;
+  background: yellow;
+  width: auto;
+  height: auto;
+} */
+.one {
+  grid-area: one;
+  background-color: blue;
+}
+
+.two {
+  grid-area: two;
+  background-color: linen;
+}
+
+.three {
+  grid-area: three;
+  background-color: purple;
+}
+
+.four {
+  grid-area: four;
+  background-color: aqua;
+}
+
+.five {
+  grid-area: five;
+  background-color: brown;
+}
+
+.six {
+  grid-area: six;
+  background-color: blue;
 }
