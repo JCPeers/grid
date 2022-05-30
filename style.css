@@ -19,10 +19,6 @@ a {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.home {
-  align-self: self-start;
-}
-
 .page-title-container {
   display: flex;
   flex-direction: column;
@@ -32,6 +28,7 @@ a {
   background-image: url(pattern.png);
   border: 1.5px solid #0085e5;
   height: 300px;
+  margin: auto;
 }
 
 .page-title {
@@ -44,6 +41,44 @@ a {
 .cat-icon {
   color: #ff7722;
 }
+
+.block-container {
+  display: grid;
+  grid-template-areas:
+    "one one two"
+    "three four two";
+  grid-gap: 10px;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.block-containers {
+  /* width: 80%; */
+  text-align: center;
+  margin: 10px auto 0px;
+  border: 2px solid green;
+}
+
+.fruit-grid {
+  height: 100px;
+  width: 100px;
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
+
 .footer {
   border: 2px solid black;
 }
