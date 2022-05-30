@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  margin: 0px;
 }
 .nav-container {
   /* border: 2px solid red; */
@@ -15,8 +16,7 @@ a {
   padding: 10px;
   text-decoration: none;
   color: #0085e5;
-  font-family: "Gloria Hallelujah", cursive;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Nixie One", cursive;
 }
 
 .page-title-container {
@@ -26,14 +26,13 @@ a {
   align-items: center;
   width: 100%;
   background-image: url(pattern.png);
-  border: 1.5px solid #0085e5;
+  border: 1.5px dashed #0085e5;
   height: 300px;
   margin: auto;
 }
 
 .page-title {
-  font-family: "Gloria Hallelujah", cursive;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Nixie One", cursive;
   font-size: 48px;
   color: #0085e5;
 }
@@ -49,7 +48,7 @@ a {
     "three four two";
   grid-gap: 10px;
   margin-top: 32px;
-  width: 100%;
+  width: 98%;
 }
 
 .block-containers {
@@ -57,6 +56,10 @@ a {
   text-align: center;
   margin: 10px auto 0px;
   border: 2px solid green;
+}
+
+.block-title {
+  font-family: "Nixie One", cursive;
 }
 
 .fruit-grid {
@@ -79,6 +82,15 @@ a {
   grid-area: four;
 }
 
+.footer-container {
+  margin-bottom: 30px;
+}
+
 .footer {
   border: 2px solid black;
+  padding: 20px;
+  font-family: "Nixie One", cursive;
+  text-align: center;
+  background-image: url(pattern.png);
+  border: 1.5px dashed #0085e5;
 }
